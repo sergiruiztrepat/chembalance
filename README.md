@@ -1,2 +1,0 @@
-# balance
-Balance chemical equations
