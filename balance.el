@@ -1,4 +1,4 @@
-;;; balance.el --- Balances chemical equations - * -lexical-binding: t:- * -
+;;; balance.el --- Balance chemical equations - * -lexical-binding: t:- * -
 ;; -*- coding: utf-8 -*-
 ;;
 ;; Copyright 2021 by Sergi Ruiz Trepat
