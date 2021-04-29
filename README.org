@@ -28,17 +28,20 @@ You can mark a region with a chemical equation and then ~M-x balance~.
 
 It will give you the balanced equation.
 
-Balance supports formulas with parentheses. Ex: Fe(OH)2
+Balance supports formulas with parentheses.
+
+Ex: 3 Hg(OH)2 + 2 H3PO4 => Hg3(PO4)2 + 6 H2O
+
 
 ** Customize:
 
-To customize balance, do M-x customize-group RET balance.
+To customize balance, do ~M-x customize-group RET balance~.
 
 There are two custom variables:
 
-balance-arrow-syntax (list of accepted arrows).
+~balance-arrow-syntax~ (list of accepted arrows).
 
-balance-insert-string (if non-nil, when you call balance with selected
+~balance-insert-string~ (if non-nil, when you call balance with selected
 region, balance will kill that region and insert the balanced
 reaction).
 
