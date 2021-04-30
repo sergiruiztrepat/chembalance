@@ -62,6 +62,7 @@
 
 (require 'calc-ext)
 (require 'cl-lib)
+(require 'subr-x)
 
 (defvar calc-command-flags)
 
@@ -301,7 +302,7 @@ Thanks to RNA."
 
 (defun balance-total-by-element (compounds)
   "Return hash-table with each element in COMPOUNDS and its total value."
-  (let ((compound-hash (make-hash-table :test 'equal)) element)
+  (let ((compound-hash (make-hash-table :test 'equal)) element val)
     (dolist (elt compounds)
       (while elt
 	(setq element (car elt))
@@ -419,7 +420,7 @@ Thanks to RNA."
   "Extract coeficients from COMPOUNDS-STRING.
 And return a list which car is coeficients and cdr is a list of
 strings without coeficients."
-  (let (coeficients char coef compounds rest)
+  (let (coeficients char coef compounds rest compound)
     
     (setq compounds-string (replace-regexp-in-string " " ""
 						     compounds-string))
@@ -584,7 +585,7 @@ MATRIX comes from (balance-process-matrix m1 m2)."
 ;;	(push x divisors))) ;;;; point
     
     (setq divisors (mapcar #'string-to-number divisors))
-    (apply #'lcm divisors)))
+    (apply #'cl-lcm divisors)))
 
 (defun balance-to-integers (solutions)
   "Convert SOLUTIONS from fractions to integers.
