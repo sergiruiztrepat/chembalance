@@ -584,7 +584,7 @@ MATRIX comes from (chembalance-process-matrix m1 m2)."
 ;;	(push x divisors))) ;;;; point
     
     (setq divisors (mapcar #'string-to-number divisors))
-    (apply #'lcm divisors)))
+    (apply #'cl-lcm divisors)))
 
 (defun chembalance-to-integers (solutions)
   "Convert SOLUTIONS from fractions to integers.
