@@ -7,7 +7,7 @@
 ;; Created: 2021
 ;; Version: 1.0
 ;; Keywords: convenience, chemistry
-;; Homepage: https://github.com/sergiruiztrepat/chembalance.el
+;; Homepage: https://github.com/sergiruiztrepat/chembalance
 ;; Package-Requires: ((emacs "24.4"))
 ;;
 ;; Chembalance is free software; you can redistribute it and/or modify it
