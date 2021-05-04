@@ -103,6 +103,7 @@
 ;; Main function
 ;;
 
+;;;###autoload
 (defun chembalance (&optional data)
   "Balance reaction in string DATA."
   (interactive)
