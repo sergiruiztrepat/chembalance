@@ -62,6 +62,7 @@
 
 (require 'calc-ext)
 (require 'cl-lib)
+(require 'subr-x)
 
 (defvar calc-command-flags)
 
