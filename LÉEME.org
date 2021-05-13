@@ -1,0 +1,50 @@
+* chembalance.el
+
+Ajusta ecuaciones químicas.
+
+** Instalación:
+
+   Tras instalar el programa (a través de MELPA) o copiar
+chembalance.el en tu load-path, añada la siguiente línea a su fichero init.el:
+
+   ~(require 'chembalance)~
+
+** Uso:
+
+   Funciona de manera interactiva (introduciendo una ecuación química
+en el minibuffer) y también seleccionando una región en el buffer activo.
+
+~M-x chembalance~ => lleva al minibuffer. Introducza su ecuación.
+
+Ej.  FeS + O2 => Fe2O3 + SO2
+
+Le devolverá:
+
+~Balanced reaction : 4 FeS + 7 O2 => 2 Fe2O3 + 4 SO2~
+
+También puede utilizarlo para comprobar si una reacción está ajustada.
+
+Puede seleccionar una región con una ecuación química y hacer ~M-x chembalance~.
+
+Le devolverá la reacción ajustada.
+
+Chembalance soporta fórmulas con paréntesis.
+
+Ej: 3 Hg(OH)2 + 2 H3PO4 => Hg3(PO4)2 + 6 H2O
+
+
+** Customización:
+
+Para customizar chembalance, pulse ~M-x customize-group RET chembalance~.
+
+Hay dos variables para customizar:
+
+~chembalance-arrow-syntax~ (lista de las flechas aceptadas).
+
+~chembalance-insert-string~ (si el valor de esta variable es distinto de
+nil, cuando llame a chembalance habiendo seleccionado una región, el
+programa eliminará la región seleccionada e introducirá en su lugar la
+ecuación ajustada).
+
+Por favor, escríbame con sus comentarios, mejoras u opiniones sobre
+este programa a [[sergi.ruiz.trepat@gmail.com]].
