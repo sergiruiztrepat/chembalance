@@ -9,6 +9,7 @@ to your init file:
 
 ~(require 'chembalance)~
 
+
 ** Usage:
    
 It works interactively (entering your equation at the minibuffer) and
@@ -48,10 +49,18 @@ reaction).
 Please, email me your comments, bugs, improvements or opinions on this
 package to [[sergi.ruiz.trepat@gmail.com]].
 
+
+
+
   
 
 
 
 
 
+** todolist:
+
+*** Allow sign · or * in complex compounds
+    
+*** Allow redox reactions
 
