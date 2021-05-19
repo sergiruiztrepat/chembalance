@@ -60,7 +60,21 @@ package to [[sergi.ruiz.trepat@gmail.com]].
 
 ** todolist:
 
-*** Allow sign · or * in complex compounds
+- Allow sign · or * in complex compounds
     
-*** Allow redox reactions
+- Allow redox reactions
 
+
+** Known issues:
+
+   If there is an error in the calculation process, you will see a
+   buffer with the error and the calc buffer opened (--- Emacs
+   Calculator Mode ---). In this case, is possible that the variable
+   ~calc-prefer-frac~ is set to t, changing your default mode. You can
+   restore it in the scratch buffer, typing:
+   
+   ~(setq calc-prefer-frac nil)~
+
+   And evaluating with C-e with point after the closing parenteses.
+
+   I'm trying to avoid this problem in next versions.
