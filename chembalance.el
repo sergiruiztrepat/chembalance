@@ -166,13 +166,9 @@
 	(user-error "Error: reactives and products elements are not the same? "))
       ;; Calculation
       (calc nil nil nil)
-      (if calc-prefer-frac
-	  (setq results (chembalance-to-integers
-			 (chembalance-calc-results process-matrix)))
-	(setq calc-prefer-frac t)
+      (let ((calc-prefer-frac t))
 	(setq results (chembalance-to-integers
-		       (chembalance-calc-results process-matrix)))
-	(setq calc-prefer-frac nil))
+		       (chembalance-calc-results process-matrix))))
       (calc nil nil nil)
       
     ;; Output string
