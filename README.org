@@ -47,16 +47,7 @@ region, chembalance will kill that region and insert the balanced
 reaction).
 
 Please, email me your comments, bugs, improvements or opinions on this
-package to [[sergi.ruiz.trepat@gmail.com]].
-
-
-
-
-  
-
-
-
-
+package to [[sergi@aloe-associacio.org]]
 
 ** todolist:
 

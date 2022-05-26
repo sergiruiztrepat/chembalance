@@ -9,6 +9,7 @@ chembalance.el en tu load-path, añada la siguiente línea a su fichero init.el:
 
    ~(require 'chembalance)~
 
+
 ** Uso:
 
    Funciona de manera interactiva (introduciendo una ecuación química
@@ -47,4 +48,4 @@ programa eliminará la región seleccionada e introducirá en su lugar la
 ecuación ajustada).
 
 Por favor, escríbame con sus comentarios, mejoras u opiniones sobre
-este programa a [[sergi.ruiz.trepat@gmail.com]].
+este programa a [[sergi@aloe-associacio.org]]
